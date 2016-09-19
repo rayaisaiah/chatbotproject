@@ -1,6 +1,9 @@
 .header {
     background-color: #E0FFE0;
 }
+body{
+    background-image: url("http://www.psdgraphics.com/file/blue-abstract-background.jpg");
+}
 
 h4 {
     padding: 0px;

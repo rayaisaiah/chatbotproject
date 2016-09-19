@@ -1,20 +1,23 @@
 .header {
     background-color: #E0FFE0;
+    font-family: 'Share Tech Mono', monospace;
 }
 body{
     background-image: url("http://www.psdgraphics.com/file/blue-abstract-background.jpg");
+    font-family: 'Share Tech Mono', monospace;
 }
 
 h4 {
     padding: 0px;
     margin: 0px;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .btn-talk {
     -webkit-border-radius: 5;
     -moz-border-radius: 5;
     border-radius: 5px;
-    font-family: Arial;
+    font-family: 'Share Tech Mono', monospace;
     color: #ffffff;
     font-size: 14px;
     font-weight: normal;
@@ -40,6 +43,7 @@ h4 {
     height: 450px;
     font-size: 16px;
     font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #chat-area-wrapper {
@@ -49,6 +53,7 @@ h4 {
     height: 450px;
     overflow: scroll;
     border: 1px solid #C0C2C5;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #chat-area {
@@ -61,6 +66,7 @@ h4 {
     border: 1px solid #C0C2C5;
     padding: 10px;
     font-size: 18px;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #question-area {
@@ -73,12 +79,13 @@ h4 {
     margin: 0px;
     border: 1px solid #C0C2C5;
     width: 100%;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #input {
   background-color: #fff;
   border: 0px solid #C0C2C5;
-  font-family: sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   color: #000;
   padding: 5px;
   margin-right: 3px;
@@ -96,4 +103,5 @@ h4 {
     border: 0px solid #C0C2C5;
     font-size: 16px;
     font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
 }

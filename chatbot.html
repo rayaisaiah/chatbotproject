@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-xs-3 col-md-2">
                 <div id="left-sidebar">
-                  <p>Type your question -------------><br> and press the button to chat with Dave!</p>
+                  <p>Type your question -------------><br> and press the button to chat with Dave! Make sure to capitalize the first letter!</p>
                 </div>
             </div>
             <div class="col-xs-12 col-md-8">
@@ -47,5 +47,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="chatbot.js"></script>
+    <script type="text/javascript">
+if ( window.addEventListener ) {
+  var state = 0, konami = [38,38,40,40,37,39,37,39,66,65];
+  window.addEventListener("keydown", function(e) {
+    if ( e.keyCode == konami[state] ) state++;
+    else state = 0;
+    if ( state == 10 )
+      window.location = "file:///C:/Users/Student/Documents/GitHub/battleshipproject/battleship.html";  //you can write your own code here
+    }, true);
+}
+</script>
+
 </body>
 </html>

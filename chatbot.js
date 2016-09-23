@@ -10,7 +10,7 @@ var response = {
 "what time is it" : "The time is " + returnTime() + ".",
 "whats today" : "n",
 "" : "..."
-
+var multianswers = ["Dave: I dont feel like answering that now...", "not now!"]
 }
 
 function chatBotResponse(){
@@ -19,7 +19,7 @@ var answer = response[question];
 
 
 if (answer === null || answer === undefined){
-  $('#chat-area').prepend("Dave: I dont feel like answering that now..." + "</br>");
+  $('#chat-area').prepend("randomNumberGenerator(1,50)" + "</br>");
     $('#chat-area').prepend("You: " + question + "." + "</br>");
 }
 else {

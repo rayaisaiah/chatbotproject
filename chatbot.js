@@ -7,7 +7,7 @@ var response = {
 "how old are you" : "I was created at the begining of time.",
 "what is your name" : "I am DAVE the chatbot!",
 "why are you stupid" : "Why were you born? ** Dave the SavageBot! **",
-"what time is it" : "The time is " + returnTime() + " of the clock",
+"what time is it" : "The time is " + returnTime() + ".",
 "whats today" : "n",
 "" : "..."
 
@@ -34,3 +34,8 @@ var minutes = d.getMinutes();
 var n = hours + ":" + minutes;
 return n;
 }
+$("#question-area").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#talkButton").click();
+    }
+});

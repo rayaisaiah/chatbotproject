@@ -3,14 +3,15 @@ var response = {
 "hello": "Hola! (Hi)",
 "yo": "Whats up?",
 "whats up": "The sky",
-"hit me up with the code Dave!" : "I got you - Up,Up,Down,Down,Left,Right,Left,Right,A,B!",
+"hit me up with the code dave!" : "I got you - Up,Up,Down,Down,Left,Right,Left,Right,A,B!",
 "how old are you" : "I was created at the begining of time.",
 "what is your name" : "I am DAVE the chatbot!",
 "why are you stupid" : "Why were you born? ** Dave the SavageBot! **",
 "what time is it" : "The time is " + returnTime() + ".",
 "whats today" : "n",
 "" : "..."
-var multianswers = ["Dave: I dont feel like answering that now...", "not now!"]
+//var multianswers = ["Dave: I dont feel like answering that now...", "not now!"]
+//var www = randomNumberGenerator(0,1);
 }
 
 function chatBotResponse(){
@@ -19,7 +20,7 @@ var answer = response[question];
 
 
 if (answer === null || answer === undefined){
-  $('#chat-area').prepend("randomNumberGenerator(1,50)" + "</br>");
+  $('#chat-area').prepend("Dave: I dont feel like answering that now..." + "</br>");
     $('#chat-area').prepend("You: " + question + "." + "</br>");
 }
 else {

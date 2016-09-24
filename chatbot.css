@@ -7,6 +7,9 @@ body{
     font-family: 'Share Tech Mono', monospace;
     color: white;
 }
+h2 {
+  font-size: 20px;
+}
 
 h4 {
     padding: 0px;
@@ -70,7 +73,7 @@ h4 {
     padding: 10px;
     font-size: 18px;
     font-family: 'Share Tech Mono', monospace;
-  
+
 }
 
 #question-area {

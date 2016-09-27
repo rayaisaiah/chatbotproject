@@ -36,10 +36,18 @@ else {
   $('#chat-area').prepend("You: " + question + "." + "</br>");
 }
 }
+var questions = ["How are you", "Whats up", "Hows it going"];
 
 function chatBotQuestion() {
+var daveQuestion = questions;
+
+$('#chat-area').prepend("<div style='color: yellow'>" + "Dave: " + questions[Math.floor((Math.random() * multianswers.length))] + "?" + "</br>");
 
 
+}
+function chatBotQuestionResponse(){
+var qResponse =  document.getElementById("input2").value.toLowerCase();
+$('#chat-area').prepend("You: " + qResponse + "." + "</br>");
 }
 
 function returnTime() {

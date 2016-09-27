@@ -27,11 +27,11 @@ var answer = response[question];
 
 
 if (answer === null || answer === undefined){
-  $('#chat-area').prepend("Dave: I dont feel like answering that now..." + "</br>");
+  $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: I dont feel like answering that now..." + "</br>");
     $('#chat-area').prepend("You: " + question + "." + "</br>");
 }
 else {
-  $('#chat-area').prepend("Dave: " + answer + "</br>");
+  $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: " + answer + "</br>");
   $('#chat-area').prepend("You: " + question + "." + "</br>");
 }
 }

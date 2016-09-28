@@ -23,7 +23,7 @@
             <div class="col-xs-3 col-md-2">
                 <div id="left-sidebar">
                   <p>Type in your question -----><br> and press the button to chat with Dave!</p><br>
-                  <button onclick="chatBotQuestion()" type="button" id="talkButton3" class="btn-talk2">Dave will ask you a question!</button>
+                  <button onclick="chatBotQuestion()" type="button" id="talkButton3" class="btn-talk3">Dave will ask you a question!</button>
                 </div>
             </div>
             <div class="col-xs-12 col-md-8">
@@ -62,8 +62,19 @@ if ( window.addEventListener ) {
     if ( e.keyCode == konami[state] ) state++;
     else state = 0;
     if ( state == 10 )
-      window.location = "file:///C:/Users/Student/Documents/GitHub/battleshipproject/battleship.html";  //you can write your own code here
+      window.location = "file:///C:/Users/Student/Documents/GitHub/battleshipproject/battleship.html";
     }, true);
+}
+</script>
+<script type="text/javascript">
+if ( window.addEventListener ) {
+var blah = 0, secret = [72,65,82,65,77,66,69];
+window.addEventListener("keydown", function(e) {
+if ( e.keyCode == secret[blah] ) blah++;
+else blah = 0;
+if ( blah == 7 )
+  window.location = "http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg";
+}, true);
 }
 </script>
 

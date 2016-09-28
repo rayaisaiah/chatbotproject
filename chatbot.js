@@ -1,5 +1,5 @@
 
-var multimemes = ["<img src='http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg' height='42' width='42'>",
+var multimemes = [//"<img src='http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg' height='42' width='42'>",
 "<img src='http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/catffaceheader.jpg' height='42' width='42'>"];
 
 var multianswers = ["Dave: I dont feel like answering that now...", "not now!","blah!"];
@@ -28,12 +28,14 @@ var answer = response[question];
 
 
 if (answer === null || answer === undefined){
+  $('#chat-area').prepend("You: " + question + "</br>");
   $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: I dont feel like answering that now..." + "</br>");
-  $('#chat-area').prepend("You: " + question + "." + "</br>");
+
 }
 else {
+  $('#chat-area').prepend("You: " + question + "</br>");
   $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: " + answer + "</br>");
-  $('#chat-area').prepend("You: " + question + "." + "</br>");
+
 }
 }
 var questions = ["How are you", "Whats up", "Hows it going"];
@@ -43,11 +45,18 @@ var daveQuestion = questions;
 
 $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: " + questions[Math.floor((Math.random() * multianswers.length))] + "?" + "</br>");
 
+responseQ {
+"good" : "Awesome!",
+"bad" : "Life has its ups and downs.",
+"the sky" : "lol",
 
+}
 }
 function chatBotQuestionResponse(){
 var qResponse =  document.getElementById("input2").value.toLowerCase();
-$('#chat-area').prepend("You: " + qResponse + "." + "</br>");
+qResponse = qResponse.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, '');
+$('#chat-area').prepend("You: " + qResponse + "</br>");
+var daveResponse =  responseQ[qResponse];
 }
 
 function returnTime() {

@@ -44,19 +44,31 @@ function chatBotQuestion() {
 var daveQuestion = questions;
 
 $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: " + questions[Math.floor((Math.random() * multianswers.length))] + "?" + "</br>");
-
-responseQ {
+}
+var responseQ = {
 "good" : "Awesome!",
 "bad" : "Life has its ups and downs.",
 "the sky" : "lol",
+"nothing much" : "Nothing is something!",
+"" : "...",
+"great" : "Awesome!"
 
 }
-}
+
 function chatBotQuestionResponse(){
 var qResponse =  document.getElementById("input2").value.toLowerCase();
 qResponse = qResponse.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, '');
-$('#chat-area').prepend("You: " + qResponse + "</br>");
 var daveResponse =  responseQ[qResponse];
+if (daveResponse === null || daveResponse === undefined){
+  $('#chat-area').prepend("You: " + qResponse + "</br>");
+  $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: " + "Error 404(I think)" + "</br>");
+
+}
+else {
+  $('#chat-area').prepend("You: " + qResponse + "</br>");
+  $('#chat-area').prepend("<div style='color: yellow'>" + "Dave: " + daveResponse + "</br>");
+
+}
 }
 
 function returnTime() {

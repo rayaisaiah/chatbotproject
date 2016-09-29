@@ -2,7 +2,7 @@
 var multimemes = [//"<img src='http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg' height='42' width='42'>",
 "<img src='http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/catffaceheader.jpg' height='42' width='42'>"];
 
-var multianswers = ["Dave: I dont feel like answering that now...", "not now!","blah!"];
+var multianswers = ["Dave: I dont feel like answering that now...", "Not now!","Blah!"];
 var response = {
 "hi": "Hola! (Hi)",
 "hello": "Hola! (Hi)",
@@ -51,8 +51,8 @@ var responseQ = {
 "the sky" : "lol",
 "nothing much" : "Nothing is something!",
 "" : "...",
-"great" : "Awesome!"
-
+"great" : "Awesome!",
+"hi" : "Hello again."
 }
 
 function chatBotQuestionResponse(){
@@ -78,7 +78,7 @@ var minutes = d.getMinutes();
 var n = hours + ":" + minutes;
 return n;
 }
-$("#question-area").keyup(function(event){
+$("#question-area").keydown(function(event){
     if(event.keyCode == 13){
         $("#talkButton").click();
     }

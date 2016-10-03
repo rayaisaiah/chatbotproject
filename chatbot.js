@@ -62,7 +62,7 @@ var responseQ = {
 "nothing much" : "Nothing is something!",
 "" : "...",
 "great" : "Awesome!",
-"hi" : "Hello again."
+"hi" : "Hello again.",
 "ok" : "Okay."
 }
 
